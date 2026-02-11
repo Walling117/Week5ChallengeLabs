@@ -26,13 +26,24 @@ namespace Week5ChallengeLabs
             int acutualSum = 0;
             foreach (int i in array)
             {
-                acutualSum += array[i];
+                acutualSum += i;
             }
             return expectedSum - acutualSum;
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Clear();
+            Console.WriteLine("Find Single Number");
+            Console.WriteLine("Input: [9,6,4,2,3,5,7,0,1]");
+            Console.WriteLine($"Output: [{FindMissingNumber(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 })}]");
+            Console.ReadKey();
+
+            Console.Clear();
+            Console.WriteLine("Find single number");
+            Console.WriteLine("Input: [4,1,2,1,2]");
+            Console.WriteLine($"Output: {FindSingleNumber(new int[] {4, 1, 2, 1, 2})}");
+
         }
     }
 }
